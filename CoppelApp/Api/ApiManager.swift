@@ -37,9 +37,6 @@ class ApiManager{
         if data != nil {
             urlRequest.httpBody = data
         }
-//        if let token = UserInfo.shared.token{
-//            urlRequest.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-//        }
         if !urlStr.contains("files"){
             urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         }
@@ -56,10 +53,8 @@ class ApiManager{
                    (200..<300).contains(code){
                     self.handlerSuccess(vc: vc, data, response, error, completion: completion)
                 }else{
-//                    Loader.hideLoading()
                     self.handleError(vc: vc, data, response, error, completion: completion)
                 }
-                //completion(data,response,error)
             }
         }
         task.resume()
@@ -67,8 +62,6 @@ class ApiManager{
     
     private func handleError(vc:UIViewController? = nil, _ data: Data?, _ response:URLResponse?, _ error:Error?, completion: @escaping responseCompletion){
         if let err = error{
-//            BuilderAlertView()
-//                .genericAlertWithMessage(err.localizedDescription)
         }
         
         completion(data,response,error)

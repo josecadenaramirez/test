@@ -21,28 +21,12 @@ extension ApiManager{
         default:
             break
         }
-//        api_key=d9825b94dae2d9ee89f083795e4f19eb
-        let url = "https://api.themoviedb.org/3/\(path)?api_key=d9825b94dae2d9ee89f083795e4f19eb&language=en-US&page=\(page)"
+        let url = "\(TargetEnvironment.URL_ENDPOINT)/\(path)?api_key=\(TargetEnvironment.BASIC_KEY)&language=en-US&page=\(page)"
         ApiManager.shared.request(method: .get, urlStr: url) { (data, response, error) in
-            print("respone\(response)")
-            print("errrrrro\(error)")
             if let data = data{
-                let str = String(decoding: data, as: UTF8.self)
-                print("data\(str)")
                 do{
                     let tokenInfo = try JSONDecoder().decode(Movies.self, from: data)
                     completion(tokenInfo)
-                }catch let DecodingError.dataCorrupted(context) {
-                    print(context)
-                } catch let DecodingError.keyNotFound(key, context) {
-                    print("Key '\(key)' not found:", context.debugDescription)
-                    print("codingPath:", context.codingPath)
-                } catch let DecodingError.valueNotFound(value, context) {
-                    print("Value '\(value)' not found:", context.debugDescription)
-                    print("codingPath:", context.codingPath)
-                } catch let DecodingError.typeMismatch(type, context)  {
-                    print("Type '\(type)' mismatch:", context.debugDescription)
-                    print("codingPath:", context.codingPath)
                 } catch {
                     print("error: ", error)
                 }

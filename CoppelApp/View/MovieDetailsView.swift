@@ -35,6 +35,7 @@ class MovieDetailsView: UIViewController {
     
     private func setUI(){
         lblTitle.text = movie?.title
+        lblDate.text = (movie?.release_date ?? "").toDateString()
         lblRate.text = "★\(movie?.vote_average ?? 0.0)"
         lblAdult.text = "+18"
         if let isForAdults = movie?.adult, isForAdults{
@@ -43,7 +44,7 @@ class MovieDetailsView: UIViewController {
             lblAdult.isHidden = true
         }
         lblDescription.text = movie?.overview
-        if let url = URL(string: "http://image.tmdb.org/t/p/w500/\(movie?.poster_path ?? "")"){
+        if let url = URL(string: "\(TargetEnvironment.URL_MEDIA)/\(movie?.poster_path ?? "")"){
             imgMovie.downloadImage(from: url)
         }
     }

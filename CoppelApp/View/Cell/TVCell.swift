@@ -20,7 +20,8 @@ class TVCell: UICollectionViewCell {
         lblName.text = movie.original_title
         lblDescription.text = movie.overview
         lblRate.text = "★\(movie.vote_average ?? 0.0)"
-        imgTV.downloadImage(from: URL(string: "http://image.tmdb.org/t/p/w500/\(movie.poster_path!)")!)
+        imgTV.downloadImage(from: URL(string: "\(TargetEnvironment.URL_MEDIA)/\(movie.poster_path!)")!)
+        lblDate.text = (movie.release_date ?? "").toDateString()
     }
     
 }

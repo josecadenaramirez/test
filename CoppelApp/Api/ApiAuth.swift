@@ -9,7 +9,7 @@ import Foundation
 
 extension ApiManager{
     func getToken(completion: @escaping (Token?) -> Void){
-        let url = "https://api.themoviedb.org/3/authentication/token/new?api_key=d9825b94dae2d9ee89f083795e4f19eb"
+        let url = "\(TargetEnvironment.URL_ENDPOINT)/authentication/token/new?api_key=\(TargetEnvironment.BASIC_KEY)"
         ApiManager.shared.request(method: .get, urlStr: url) { (data, response, error) in
             if let data = data{
                 do{
@@ -27,7 +27,7 @@ extension ApiManager{
     func login(user info: UserCredentials, completion: @escaping (Token?) -> Void){
         var configDictionary = try! info.asDictionary()
         configDictionary["request_token"] = UserInfo.shared.token ?? ""
-        let url = "https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=d9825b94dae2d9ee89f083795e4f19eb"
+        let url = "\(TargetEnvironment.URL_ENDPOINT)/authentication/token/validate_with_login?api_key=\(TargetEnvironment.BASIC_KEY)"
         ApiManager.shared.request(method: .post, urlStr: url, body: configDictionary) { (data, response, error) in
             if let data = data{
                 do{
