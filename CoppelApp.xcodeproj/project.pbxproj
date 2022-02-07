@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82474A6027ADEF8800AAA394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A5F27ADEF8800AAA394 /* AppDelegate.swift */; };
+		82474A6427ADEF8800AAA394 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A6327ADEF8800AAA394 /* SplashView.swift */; };
+		82474A6727ADEF8800AAA394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82474A6527ADEF8800AAA394 /* Main.storyboard */; };
+		82474A6A27ADEF8800AAA394 /* CoppelApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82474A6827ADEF8800AAA394 /* CoppelApp.xcdatamodeld */; };
+		82474A6C27ADEF8900AAA394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82474A6B27ADEF8900AAA394 /* Assets.xcassets */; };
+		82474A6F27ADEF8900AAA394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82474A6D27ADEF8900AAA394 /* LaunchScreen.storyboard */; };
+		82474A7A27ADFA2D00AAA394 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A7927ADFA2D00AAA394 /* User.swift */; };
+		82474A7C27AE00D100AAA394 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A7B27AE00D100AAA394 /* SplashViewModel.swift */; };
+		82474A8427AE0DBE00AAA394 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A8327AE0DBE00AAA394 /* LoginView.swift */; };
+		82474A8A27AE1FCD00AAA394 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A8927AE1FCD00AAA394 /* LoginViewModel.swift */; };
+		82474A8D27AE20FF00AAA394 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A8C27AE20FF00AAA394 /* ApiManager.swift */; };
+		82474A8F27AE21D900AAA394 /* ApiAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A8E27AE21D900AAA394 /* ApiAuth.swift */; };
+		82474A9327AF24C100AAA394 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A9227AF24C100AAA394 /* Token.swift */; };
+		82474A9527AF674800AAA394 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A9427AF674800AAA394 /* UserInfo.swift */; };
+		82474A9727AF810000AAA394 /* TVShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A9627AF810000AAA394 /* TVShowsView.swift */; };
+		82474A9C27AFA1AA00AAA394 /* Encodable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A9B27AFA1AA00AAA394 /* Encodable+Ext.swift */; };
+		82474A9E27AFA5F900AAA394 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A9D27AFA5F900AAA394 /* Movies.swift */; };
+		82474AA027AFA76200AAA394 /* TVShowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474A9F27AFA76200AAA394 /* TVShowsViewModel.swift */; };
+		82474AA227AFA8E700AAA394 /* ApiMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AA127AFA8E700AAA394 /* ApiMovies.swift */; };
+		82474AA427B035AF00AAA394 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AA327B035AF00AAA394 /* UIImageView+Ext.swift */; };
+		82474AA627B05EB100AAA394 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AA527B05EB100AAA394 /* MovieDetailsView.swift */; };
+		82474AA827B0631E00AAA394 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AA727B0631E00AAA394 /* Gradient.swift */; };
+		82474AAA27B066B100AAA394 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AA927B066B100AAA394 /* Alert.swift */; };
+		82474AAC27B06AD100AAA394 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AAB27B06AD100AAA394 /* ProfileView.swift */; };
+		82474AAF27B08B1600AAA394 /* TVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AAD27B08B1600AAA394 /* TVCell.swift */; };
+		82474AB027B08B1600AAA394 /* TVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82474AAE27B08B1600AAA394 /* TVCell.xib */; };
+		82474AB227B0A20300AAA394 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AB127B0A20300AAA394 /* Loader.swift */; };
+		82474AB427B0A4CA00AAA394 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AB327B0A4CA00AAA394 /* CoreDataStack.swift */; };
+		82474AB627B0A5B600AAA394 /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AB527B0A5B600AAA394 /* TVShow.swift */; };
+		82474AB827B0D46F00AAA394 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AB727B0D46F00AAA394 /* MovieDetailViewModel.swift */; };
+		82474ABA27B0D6D900AAA394 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82474AB927B0D6D900AAA394 /* ProfileViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82474A5C27ADEF8800AAA394 /* CoppelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoppelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82474A5F27ADEF8800AAA394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82474A6327ADEF8800AAA394 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		82474A6627ADEF8800AAA394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82474A6927ADEF8800AAA394 /* CoppelApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoppelApp.xcdatamodel; sourceTree = "<group>"; };
+		82474A6B27ADEF8900AAA394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82474A6E27ADEF8900AAA394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82474A7027ADEF8900AAA394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82474A7927ADFA2D00AAA394 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		82474A7B27AE00D100AAA394 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		82474A8327AE0DBE00AAA394 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		82474A8927AE1FCD00AAA394 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		82474A8C27AE20FF00AAA394 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		82474A8E27AE21D900AAA394 /* ApiAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuth.swift; sourceTree = "<group>"; };
+		82474A9227AF24C100AAA394 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		82474A9427AF674800AAA394 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		82474A9627AF810000AAA394 /* TVShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsView.swift; sourceTree = "<group>"; };
+		82474A9B27AFA1AA00AAA394 /* Encodable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Ext.swift"; sourceTree = "<group>"; };
+		82474A9D27AFA5F900AAA394 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		82474A9F27AFA76200AAA394 /* TVShowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsViewModel.swift; sourceTree = "<group>"; };
+		82474AA127AFA8E700AAA394 /* ApiMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMovies.swift; sourceTree = "<group>"; };
+		82474AA327B035AF00AAA394 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		82474AA527B05EB100AAA394 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		82474AA727B0631E00AAA394 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		82474AA927B066B100AAA394 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		82474AAB27B06AD100AAA394 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		82474AAD27B08B1600AAA394 /* TVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCell.swift; sourceTree = "<group>"; };
+		82474AAE27B08B1600AAA394 /* TVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCell.xib; sourceTree = "<group>"; };
+		82474AB127B0A20300AAA394 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		82474AB327B0A4CA00AAA394 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		82474AB527B0A5B600AAA394 /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
+		82474AB727B0D46F00AAA394 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		82474AB927B0D6D900AAA394 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82474A5927ADEF8800AAA394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82474A5327ADEF8800AAA394 = {
+			isa = PBXGroup;
+			children = (
+				82474A5E27ADEF8800AAA394 /* CoppelApp */,
+				82474A5D27ADEF8800AAA394 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82474A5D27ADEF8800AAA394 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82474A5C27ADEF8800AAA394 /* CoppelApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82474A5E27ADEF8800AAA394 /* CoppelApp */ = {
+			isa = PBXGroup;
+			children = (
+				82474A5F27ADEF8800AAA394 /* AppDelegate.swift */,
+				82474ABD27B1033300AAA394 /* Utils */,
+				82474ABB27B1031200AAA394 /* UI */,
+				82474A7827ADF9A100AAA394 /* ViewModel */,
+				82474A7727ADF99C00AAA394 /* Model */,
+				82474A7627ADF0E300AAA394 /* View */,
+				82474A8B27AE20EE00AAA394 /* Api */,
+				82474A6B27ADEF8900AAA394 /* Assets.xcassets */,
+				82474A6D27ADEF8900AAA394 /* LaunchScreen.storyboard */,
+				82474A7027ADEF8900AAA394 /* Info.plist */,
+			);
+			path = CoppelApp;
+			sourceTree = "<group>";
+		};
+		82474A7627ADF0E300AAA394 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82474A9827AF842300AAA394 /* Cell */,
+				82474A6327ADEF8800AAA394 /* SplashView.swift */,
+				82474A8327AE0DBE00AAA394 /* LoginView.swift */,
+				82474A9627AF810000AAA394 /* TVShowsView.swift */,
+				82474AA527B05EB100AAA394 /* MovieDetailsView.swift */,
+				82474AAB27B06AD100AAA394 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82474A7727ADF99C00AAA394 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82474A7927ADFA2D00AAA394 /* User.swift */,
+				82474A9227AF24C100AAA394 /* Token.swift */,
+				82474A9427AF674800AAA394 /* UserInfo.swift */,
+				82474A9D27AFA5F900AAA394 /* Movies.swift */,
+				82474AB527B0A5B600AAA394 /* TVShow.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82474A7827ADF9A100AAA394 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				82474A7B27AE00D100AAA394 /* SplashViewModel.swift */,
+				82474A8927AE1FCD00AAA394 /* LoginViewModel.swift */,
+				82474A9F27AFA76200AAA394 /* TVShowsViewModel.swift */,
+				82474AB927B0D6D900AAA394 /* ProfileViewModel.swift */,
+				82474AB727B0D46F00AAA394 /* MovieDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		82474A8B27AE20EE00AAA394 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				82474A8C27AE20FF00AAA394 /* ApiManager.swift */,
+				82474A8E27AE21D900AAA394 /* ApiAuth.swift */,
+				82474AA127AFA8E700AAA394 /* ApiMovies.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		82474A9827AF842300AAA394 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				82474AAD27B08B1600AAA394 /* TVCell.swift */,
+				82474AAE27B08B1600AAA394 /* TVCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		82474ABB27B1031200AAA394 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				82474A6527ADEF8800AAA394 /* Main.storyboard */,
+				82474ABC27B1031900AAA394 /* Utils */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		82474ABC27B1031900AAA394 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				82474AA927B066B100AAA394 /* Alert.swift */,
+				82474AB127B0A20300AAA394 /* Loader.swift */,
+				82474AA727B0631E00AAA394 /* Gradient.swift */,
+				82474AA327B035AF00AAA394 /* UIImageView+Ext.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		82474ABD27B1033300AAA394 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				82474A6827ADEF8800AAA394 /* CoppelApp.xcdatamodeld */,
+				82474A9B27AFA1AA00AAA394 /* Encodable+Ext.swift */,
+				82474AB327B0A4CA00AAA394 /* CoreDataStack.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82474A5B27ADEF8800AAA394 /* CoppelApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82474A7327ADEF8900AAA394 /* Build configuration list for PBXNativeTarget "CoppelApp" */;
+			buildPhases = (
+				82474A5827ADEF8800AAA394 /* Sources */,
+				82474A5927ADEF8800AAA394 /* Frameworks */,
+				82474A5A27ADEF8800AAA394 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoppelApp;
+			productName = CoppelApp;
+			productReference = 82474A5C27ADEF8800AAA394 /* CoppelApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82474A5427ADEF8800AAA394 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					82474A5B27ADEF8800AAA394 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 82474A5727ADEF8800AAA394 /* Build configuration list for PBXProject "CoppelApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82474A5327ADEF8800AAA394;
+			productRefGroup = 82474A5D27ADEF8800AAA394 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82474A5B27ADEF8800AAA394 /* CoppelApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82474A5A27ADEF8800AAA394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82474A6F27ADEF8900AAA394 /* LaunchScreen.storyboard in Resources */,
+				82474AB027B08B1600AAA394 /* TVCell.xib in Resources */,
+				82474A6C27ADEF8900AAA394 /* Assets.xcassets in Resources */,
+				82474A6727ADEF8800AAA394 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82474A5827ADEF8800AAA394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82474AB627B0A5B600AAA394 /* TVShow.swift in Sources */,
+				82474A6427ADEF8800AAA394 /* SplashView.swift in Sources */,
+				82474A9C27AFA1AA00AAA394 /* Encodable+Ext.swift in Sources */,
+				82474A6027ADEF8800AAA394 /* AppDelegate.swift in Sources */,
+				82474AA427B035AF00AAA394 /* UIImageView+Ext.swift in Sources */,
+				82474A8D27AE20FF00AAA394 /* ApiManager.swift in Sources */,
+				82474ABA27B0D6D900AAA394 /* ProfileViewModel.swift in Sources */,
+				82474A6A27ADEF8800AAA394 /* CoppelApp.xcdatamodeld in Sources */,
+				82474AA027AFA76200AAA394 /* TVShowsViewModel.swift in Sources */,
+				82474AAA27B066B100AAA394 /* Alert.swift in Sources */,
+				82474A8427AE0DBE00AAA394 /* LoginView.swift in Sources */,
+				82474A8F27AE21D900AAA394 /* ApiAuth.swift in Sources */,
+				82474A7C27AE00D100AAA394 /* SplashViewModel.swift in Sources */,
+				82474A7A27ADFA2D00AAA394 /* User.swift in Sources */,
+				82474A9E27AFA5F900AAA394 /* Movies.swift in Sources */,
+				82474A9727AF810000AAA394 /* TVShowsView.swift in Sources */,
+				82474AB227B0A20300AAA394 /* Loader.swift in Sources */,
+				82474AA627B05EB100AAA394 /* MovieDetailsView.swift in Sources */,
+				82474AB827B0D46F00AAA394 /* MovieDetailViewModel.swift in Sources */,
+				82474AA227AFA8E700AAA394 /* ApiMovies.swift in Sources */,
+				82474AAC27B06AD100AAA394 /* ProfileView.swift in Sources */,
+				82474AA827B0631E00AAA394 /* Gradient.swift in Sources */,
+				82474AB427B0A4CA00AAA394 /* CoreDataStack.swift in Sources */,
+				82474AAF27B08B1600AAA394 /* TVCell.swift in Sources */,
+				82474A9327AF24C100AAA394 /* Token.swift in Sources */,
+				82474A9527AF674800AAA394 /* UserInfo.swift in Sources */,
+				82474A8A27AE1FCD00AAA394 /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82474A6527ADEF8800AAA394 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82474A6627ADEF8800AAA394 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82474A6D27ADEF8900AAA394 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82474A6E27ADEF8900AAA394 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82474A7127ADEF8900AAA394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82474A7227ADEF8900AAA394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82474A7427ADEF8900AAA394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9988524L8;
+				INFOPLIST_FILE = CoppelApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.coppel.CoppelApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82474A7527ADEF8900AAA394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9988524L8;
+				INFOPLIST_FILE = CoppelApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.coppel.CoppelApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82474A5727ADEF8800AAA394 /* Build configuration list for PBXProject "CoppelApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82474A7127ADEF8900AAA394 /* Debug */,
+				82474A7227ADEF8900AAA394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82474A7327ADEF8900AAA394 /* Build configuration list for PBXNativeTarget "CoppelApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82474A7427ADEF8900AAA394 /* Debug */,
+				82474A7527ADEF8900AAA394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82474A6827ADEF8800AAA394 /* CoppelApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82474A6927ADEF8800AAA394 /* CoppelApp.xcdatamodel */,
+			);
+			currentVersion = 82474A6927ADEF8800AAA394 /* CoppelApp.xcdatamodel */;
+			path = CoppelApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 82474A5427ADEF8800AAA394 /* Project object */;
+}
